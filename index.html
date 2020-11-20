@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery.js"></script>
+        <sript src="js/bootstrap.js"></sript>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>My Blog</title>
+  </head>
+  
+  <body>
+    <style>
+ body{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
+  h1,h2,h3,h4,h5{
+    font-weight: 600;
+    color: #66FCF1;
+  }
+
+  .navbar{
+    background-color: rgb(0, 0, 0);
+  }
+
+  .navbar-brand{
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .btn{
+    background-color: #66FCF1 !important;
+    color: #0B0C10 !important;
+  }
+
+  a{
+    color:#66FCF1 ;
+  }
+
+  input{
+    background-color: #1F2833 !important;
+    color:#66FCF1 !important ;
+  }
+
+  img{
+    filter: grayscale(50%) brightness(0.8)
+  }
+
+  img .rounded-circle {
+    filter: none;
+  }
+
+  .hero{
+    background-color: #1F2833;
+  }
+
+  .hero-post{
+    position: relative;
+  }
+
+  .hero-post-badges{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .hero-post-badges> a{
+    display: block;
+    background-color:#0B0C10 ;
+    color: #66FCF1;
+    font-size: 0.8rem;
+  }
+  
+  .hero-post-content{
+    position: absolute;
+    bottom: 10px;
+    color: #66FCF1;
+  }
+
+  .hero-post-content img {
+    border: 2px solid #66FCF1;
+  }
+
+  .social-link img{
+    border: 2px solid #66FCF1;
+  }
+
+  .blog-posts {
+    background-color: #0B0C10;
+    color: ivory;
+  }
+
+  .blog-post {
+    background-color: #213144;
+  }
+  
+
+  .blog-post .col-sm-8 {
+    border-left: 3px solid #66FCF1;
+  }
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light text-light">
+      <div class="container">
+      <a class="navbar-brand text-primary" href="#"><b>Blogg</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link text-primary" href="#">Link <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="#">Link</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control  border-0 rounded-0" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary text-dark rounded-0 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+   <section>
+     <!--HERO SECTION-->
+    
+   
+      <div class="hero py-4">
+        <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="hero-post shadow">
+          <img class="img-fluid" src="images/6kpaper.jpg" alt="">
+          <div class="hero-post-badges text-center">
+            <a class="p-2 mb-2 px-3" href="#"><i class="mr-2 fas fa-address-book" aria-hidden="true"></i>15. march 2020</a>
+            <a class="p-2 mb-2 px-3" href="#">Technology<i class=""></i></a>
+          </div>
+          <div class="hero-post-content">
+            <div class="row">
+              <div class="col-sm-3">
+                <img class="img-fluid rounded-circle" src="images/5kpaper.jpg" alt="author">
+        </div>
+        <div class="col-sm-9">
+          <h2>My blog post i want to make for me...........</h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-lg-4">
+  <div class="hero-post shadow">
+    <img class="img-fluid " src="images/tree.jpg" alt="">
+    <div class="hero-post-badges">
+      <a href="#"><i class="fas fa-address-book" aria-hidden="true"></i>15. march 2020</a>
+      <a href="#">Technology<i class=""></i></a>
+    </div>
+    <div class="hero-post-content">
+      <div class="row">
+        <div class="col-sm-3">
+          <img class="img-fluid rounded-circle" src="images/5kpaper.jpg" alt="author">
+  </div>
+  <div class="col-sm-9">
+    <h3>My blog post...........</h3>
+</div>
+</div>
+</div>
+  </div>
+<div class="hero-post shadow">
+  <img class="img-fluid" src="images/4kpaper.jpg" alt="">
+  <div class="hero-post-badges">
+    <a href="#"><i class="fas fa-address-book" aria-hidden="true"></i>15. march 2020</a>
+    <a href="#">Technology<i class=""></i></a>
+  </div>
+  <div class="hero-post-content">
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="img-fluid rounded-circle" src="images/5kpaper.jpg" alt="author">
+</div>
+<div class="col-sm-9">
+  <h3>My blog post...........</h3>
+</div>
+</div>
+</div>
+</div>
+    </section>
+        
+          
+       <!--MAIN BLOG SECTION-->
+      
+       <section class="blog-posts">
+        <div class="container">
+         <div class="row">
+           <div class="col-md-8">
+             <article class="blog-posts mb-3 mt-4 shadow">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" alt="" src="images/6kpaper.jpg">
+
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">my blog post title </h3>
+                  <p class="m-0">This is the paragraph for where the title of my blog post will be.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="badge">
+                    <a href="">Technology</a>
+                    <a href="">Programming</a>
+                  </div>
+                </div>
+              </div>
+             </article>
+
+             
+
+             <article class="blog-posts mb-3 mt-4 shadow">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" alt="" src="images/6kpaper.jpg">
+
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">my blog post title </h3>
+                  <p class="m-0">This is the paragraph for where the title of my blog post will be.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="badge">
+                    <a href="">Technology</a>
+                    <a href="">Programming</a>
+                  </div>
+                </div>
+              </div>
+             </article>
+
+             <article class="blog-posts mb-3 mt-4 shadow">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" alt="" src="images/6kpaper.jpg">
+
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">my blog post title </h3>
+                  <p class="m-0">This is the paragraph for where the title of my blog post will be.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..</p>
+                  <div class="badge">
+                    <a href="">Technology</a>
+                    <a href="">Programming</a>
+                  </div>
+                </div>
+              </div>
+             </article>
+
+             <article class="blog-posts mb-3 mt-4 shadow">
+              <div class="row">
+                <div class="col-md-4">
+                  <img class="img-fluid" alt="" src="images/6kpaper.jpg">
+
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">my blog post title </h3>
+                  <p class="m-0">This is the paragraph for where the title of my blog post will be.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  <div class="badge">
+                    <a href="">Technology</a>
+                    <a href="">Programming</a>
+                  </div>
+                </div>
+              </div>
+             </article>
+             
+           </div>
+           <aside class="col-md-4">
+             <!--SOCIAL LINKS-->
+             <div class="row text-center">
+               <div class="col-sm-4">
+                 <a class="social-link py-4 w-100">
+                   <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                 </a>
+               </div>
+               <div class="col-sm-4">
+                <a class="social-link py-4 w-100">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+               </div>
+               <div class="col-sm-4">
+                <a class="social-link py-4 w-100">
+                  <i class="fa fa-youtubeplay" aria-hidden="true"></i>
+                </a>
+             </div>
+             <h4 class="aside-heading mt-4">Popular Authors</h4>
+             <article class="row author mb-3">
+               <div class="col-sm-4">
+                 <img class="img-fluid rounded-circle" alt="" src="images/4kpaper.jpg">
+               </div>
+               <div class="col-sm-8 text-left">
+                 <h5 class="m-0">John mike</h5>
+                 <p class="m-0">Lorem ipsum dolor,tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <div class="social-links">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                  </div>
+               </div>
+             </article>
+
+             <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img class="img-fluid rounded-circle" alt="" src="images/4kpaper.jpg">
+              </div>
+              <div class="col-sm-8 text-left">
+                <h5 class="m-0">John mike</h5>
+                <p class="m-0">Lorem ipsum dolor,tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <div class="social-links">
+                   <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                 </div>
+              </div>
+            </article>
+
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img class="img-fluid rounded-circle" alt="" src="images/4kpaper.jpg">
+              </div>
+              <div class="col-sm-8 text-left">
+                <h5 class="m-0">John mike</h5>
+                <p class="m-0">Lorem ipsum dolor,tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <div class="social-links">
+                   <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                 </div>
+              </div>
+            </article>
+
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img class="img-fluid rounded-circle" alt="" src="images/4kpaper.jpg">
+              </div>
+              <div class="col-sm-8 text-left">
+                <h5 class="m-0">John mike</h5>
+                <p class="m-0">Lorem ipsum dolor,tempor incididunt ut labore et dolore magna aliqua.</p>
+                 <div class="social-links">
+                   <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                 </div>
+              </div>
+            </article>
+            <div class="col-sm-12">
+            <h4 class="aside-heading mt-4 ">Popular Categories</h4>
+            <div class="badge w-100">
+              <p class="badge-link">
+                <a>Technology</a>
+              </p>
+              <p class="badge-link">
+                <a>Programming</a>
+              </p>
+              <p class="badge-link">
+                <a>blog-posts Categories</a>
+              </p>
+              <p class="badge-link">
+                <a>Html Bootstrap</a>
+              </p>
+            </div>
+             </aside>
+         </div>
+        </div>
+       </section>
+        
+      <!--FOOTER-->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+             <a class="footer-logo" href="">Blogg</a>
+             <p>Lorem ipsum dolor,tempor incididunt ut labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate</p>
+            </div>
+            <div class="col-md-4">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a>Home</a></li>
+                <li><a>Terms of services</a></li>
+                <li><a>Privacy policy</a></li>
+                <li><a>Contacts</a></li>
+                <li><a>Newsletter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Newsletter</h4>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+          <div class="w-100 text-center">
+            <p>Made by <a>francis ehiaguina</a> &copy; 2020. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+        
+   
+
+
+
+  </body>
+
+</html>
+        
+      
+     
+
+      
+
+     
+     
+
